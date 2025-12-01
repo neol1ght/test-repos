@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: Roboto;
+}
+a {
+  color: black;
+  text-decoration: none;
+  /* margin: 0;
+  padding: 0; */
+}
+img {
+  max-width: 100%;
+  object-position: center;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: inline-flex;
+  gap: 65px;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+nav a:hover {
+  border-bottom: 2px solid rgb(214, 96, 0);
+}
+.buyer-block {
+  display: flex ;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+.buyer-block:hover {
+  border-bottom: 2px solid rgb(214, 96, 0);
+}
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100em);
+  }
+}
+.marquee {
+  color: rgb(214, 96, 0);
+  animation-name: marquee-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  overflow-x: hidden !important;
+}
+.static-block {
+  background-color: black;
+}
