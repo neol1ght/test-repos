@@ -1,0 +1,5 @@
+<!-- Сохраните как star.svg -->
+<svg width="20" height="20" viewBox="0 0 20 20">
+  <path d="M10 0L12 7H19L13 11L15 18L10 14L5 18L7 11L1 7H8L10 0Z" 
+        fill="currentColor"/>
+</svg>

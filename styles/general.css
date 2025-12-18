@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Science-Gothic-Normal";
+  src: url(../fonts/Science_Gothic/ScienceGothic-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Science-Gothic";
+  src: url(../fonts/Science_Gothic/ScienceGothic_Expanded-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Science-Gothic-Light";
+  src: url(../fonts/Science_Gothic/ScienceGothic-Light.ttf) format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+/* Общие стили */
+header {
+  background-color: rgba(216, 216, 216, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.header-text {
+  font-family: "Science-Gothic";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Обычное меню (видно на ПК) */
+header nav {
+  display: block;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+}
+
+header li {
+  font-family: "Science-Gothic";
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  border-bottom: 2px solid transparent;
+}
+header li:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  transition: border-bottom 0.3s ease-in;
+}
+/* Корзина на ПК */
+.header-text[href] {
+  display: block;
+}
+
+/* Бургер (скрыт на ПК) */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  padding: 5px;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* Мобильное меню (скрыто) */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(216, 216, 216, 1);
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Science-Gothic";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+/* Когда меню открыто */
+.mobile-menu.active {
+  display: flex;
+}
+
+.footer-block {
+  width: 100%; /* Важно! */
+  font-family: "Science-Gothic";
+  display: flex;
+  background-color: rgb(236, 236, 236);
+  justify-content: space-between;
+  padding-top: 2%;
+  line-height: 2em;
+  font-size: clamp(10px, 5vw, 20px);
+}
+.footer-block span {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: clamp(8px, 3vw, 14px);
+  font-family: "Science-Gothic-Normal";
+}
+.left-footer-block {
+  margin-left: 5%;
+}
+.right-footer-block {
+  margin-right: 5%;
+  font-size: clamp(8px, 3vw, 14px);
+}
+
+@media (max-width: 780px) {
+  header ul {
+    padding: 0;
+    gap: 15px;
+  }
+}
+/* Спец запрос для появления бургера -- отдельно от всех медиа-запросов */
+
+@media (max-width: 680px) {
+  header nav,
+  .header-text[href] {
+    display: none;
+  }
+
+  /* Показываем бургер */
+  .burger {
+    display: flex;
+  }
+}

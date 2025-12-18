@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <title>WearStore</title>
+  </head>
+  <body>
+    <header>
+      <p class="header-text">WearStore</p>
+      <nav>
+        <ul>
+          <a href="#"><li>Главная</li></a>
+          <a href="#"><li>Купить</li></a>
+          <a href="#"><li>О нас</li></a>
+          <a href="#"><li>Контакты</li></a>
+        </ul>
+      </nav>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Главная</a>
+        <a href="#">Купить</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        <a href="#" class="cart-mobile">Корзина</a>
+      </div>
+      <a href="shop-cart.html" class="header-text">Корзина</a>
+    </header>
+    <main>
+      <section class="hero-main">
+        <div class="hero-split">
+          <div class="hero-left">
+            <div class="hero-content">
+              <p class="hero-subtitle">This is</p>
+              <h1 class="head-type">WearStore</h1>
+              <p class="hero-description">
+                Единство, стиль и комфорт. Вот наш лозунг. Никаких излишек, все
+                по делу. Элементы одежды сочетают строгость, и колорит. Оформить
+                заказ вы можете у нас
+              </p>
+              <button class="hero-button">В каталог</button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img
+              src="images/main-background.jpg"
+              alt="Fashion model"
+              class="hero-bg-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция с карточками товара -->
+
+      <section class="cards-main">
+        <h1 class="head-typing" style="text-align: center">Коллекции</h1>
+        <!-- Карты товаров -->
+        <div class="cards-block">
+          <!-- Карта товара -->
+          <a href="main.html" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <!-- Фоновая картинка -->
+                <div class="card-bg-first"></div>
+                <div class="card-text">
+                  <p class="collection-name">Ex with Christmas</p>
+                </div>
+
+                <!-- Кнопка "Подробнее" (только при наведении) -->
+                <div class="card-overlay">
+                  <button class="card-button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Карта товара -->
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <!-- Фоновая картинка -->
+                <div class="card-bg-second"></div>
+                <div class="card-text">
+                  <p class="collection-name">Black new year</p>
+                </div>
+
+                <!-- Кнопка "Подробнее" (только при наведении) -->
+                <div class="card-overlay">
+                  <button class="card-button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Карта товара -->
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <!-- Фоновая картинка -->
+                <div class="card-bg-third"></div>
+
+                <!-- Текст названия коллекции (только на обычном состоянии) -->
+                <div class="card-text">
+                  <p class="collection-name">Nope with cosy home</p>
+                </div>
+                <div class="card-overlay">
+                  <button class="card-button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Карта товара -->
+          <a href="#" class="card-link">
+            <div class="card">
+              <div class="card-image">
+                <!-- Фоновая картинка -->
+                <div class="card-bg-fourth"></div>
+                <div class="card-text">
+                  <p class="collection-name">Disco with style prams</p>
+                </div>
+
+                <!-- Кнопка "Подробнее" (только при наведении) -->
+                <div class="card-overlay">
+                  <button class="card-button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Секция с карточками закончена  -->
+
+      <!-- Секция галерея -->
+      <section class="gallery">
+        <h1 class="head-typing" style="text-align: center">Галерея</h1>
+        <div class="gallery-blocks">
+          <div class="gallery-images-block">
+            <div class="gallery-image-container image-1">
+              <img
+                src="images/gallery-first.jpg"
+                alt="Описание изображения 1"
+              />
+            </div>
+            <div class="gallery-image-container image-2">
+              <img
+                src="images/gallery-second.jpg"
+                alt="Описание изображения 2"
+              />
+            </div>
+            <div class="gallery-image-container image-3">
+              <img
+                src="images/gallery-third.jpg"
+                alt="Описание изображения 3"
+              />
+            </div>
+            <div class="gallery-image-container image-4">
+              <img
+                src="images/gallery-fourth.jpg"
+                alt="Описание изображения 4"
+              />
+            </div>
+            <div class="gallery-image-container image-5">
+              <img
+                src="images/gallery-fifth.jpg"
+                alt="Описание изображения 5"
+              />
+            </div>
+          </div>
+
+          <div class="gallery-text-block">
+            <p>
+              Каждая коллекция — исследование формы, текстуры и
+              функциональности. Мы убираем лишнее, оставляя только необходимое.
+              Здесь нет случайных деталей. Только продуманный дизайн, который
+              работает на вас ежедневно.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Секция галерея закончена -->
+
+      <!-- Секция новостной блок -->
+      <section class="news">
+        <h1 class="head-typing" style="text-align: center">Новости</h1>
+        <!-- Блок карточек новостей -->
+        <div class="news-cards-block">
+          <div class="news-card">
+            <img
+              src="images/news-image-block.jpg"
+              alt="News card"
+              class="news-card-image"
+            />
+            <div class="news-card-text">
+              <p class="news-card-general">Новый год</p>
+              <p class="news-card-date">17.12.2025</p>
+              <p class="news-card-description">
+                В преддверии Нового Года скидки до 80%!
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/news-image-block-2.jpg"
+              alt="News card"
+              class="news-card-image"
+            />
+            <div class="news-card-text">
+              <p class="news-card-general">Завершилась неделя моды</p>
+              <p class="news-card-date">12.12.2025</p>
+              <p class="news-card-description">
+                Закончилась неделя моды в Смоленске. Все горячие новости, вы
+                можете найти у нас
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/news-image-block-3.jpg"
+              alt="News card"
+              class="news-card-image"
+            />
+            <div class="news-card-text">
+              <p class="news-card-general">Новые коллекции</p>
+              <p class="news-card-date">15.12.2025</p>
+              <p class="news-card-description">
+                Новые коллекции Example1, Example2, Example3 уже ждут вас
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/news-image-block-4.jpg"
+              alt="News card"
+              class="news-card-image"
+            />
+            <div class="news-card-text">
+              <p class="news-card-general">Доработка страницы</p>
+              <p class="news-card-date">14.12.2025</p>
+              <p class="news-card-description">
+                Добавили новую страничку -- "Коллекция"
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/news-image-block-5.jpg"
+              alt="News card"
+              class="news-card-image"
+            />
+            <div class="news-card-text">
+              <p class="news-card-general">
+                Завершен показ новой коллекции Summer 2026
+              </p>
+              <p class="news-card-date">16.12.2025</p>
+              <p class="news-card-description">
+                Смотрите подробнее на сайтах наших спонсоров: ...
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/news-image-block-6.jpg"
+              alt="News card"
+              class="news-card-image"
+            />
+            <div class="news-card-text">
+              <p class="news-card-general">Завершилась неделя моды</p>
+              <p class="news-card-date">15.12.2025</p>
+              <p class="news-card-description">
+                Закончилась неделя моды в Смоленске. Все горячие новости, вы
+                можете найти у нас
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Начало раздела О нас -->
+      <section class="about">
+        <h1 class="head-typing" style="text-align: center">О нас</h1>
+        <div class="about-section">
+          <div class="about-connectors">
+            <!-- Верхняя кривая линия -->
+            <svg
+              class="connector-top"
+              viewBox="0 0 400 100"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,50 Q100,0 200,50 T400,50"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="2"
+                stroke-dasharray="3"
+              />
+            </svg>
+
+            <!-- Нижняя кривая линия -->
+            <svg
+              class="connector-bottom"
+              viewBox="0 0 400 100"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,50 Q100,100 200,50 T400,50"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="2"
+                stroke-dasharray="3"
+              />
+            </svg>
+          </div>
+          <div class="about-block">
+            <div class="first-about-block">
+              <span>1</span>
+              <img
+                src="images/first-about-icon.png"
+                alt=""
+                class="icon-about-block"
+              />
+
+              <div class="text-about-block">
+                <p class="head-text-about">Качество</p>
+                <p>
+                  Мы производим не просто покупаемый бренд, а работаем на высшем
+                  уровне - качество, наше второе имя
+                </p>
+              </div>
+            </div>
+            <div class="second-about-block">
+              <span>2</span>
+              <img
+                src="images/second-about-icon.png"
+                alt=""
+                class="icon-about-block"
+              />
+
+              <div class="text-about-block">
+                <p class="head-text-about">Лидерство</p>
+                <p>
+                  За 4 года компания вышла в топ-5 на рынок продаваемой одежды в
+                  России и СНГ среди молодежных брендов
+                </p>
+              </div>
+            </div>
+            <div class="third-about-block">
+              <span>3</span>
+              <img
+                src="images/third-about-icon.png"
+                alt=""
+                class="icon-about-block"
+              />
+
+              <div class="text-about-block">
+                <p class="head-text-about">Глобализация</p>
+                <p>
+                  Развитие компании планирует выдвижение своей продукции в
+                  Азиатские страны содружества и Бразилию
+                </p>
+              </div>
+            </div>
+            <div class="fourth-about-block">
+              <span>4</span>
+              <img
+                src="images/fourth-about-icon.png"
+                alt=""
+                class="icon-about-block"
+              />
+
+              <div class="text-about-block">
+                <p class="head-text-about">Дизайн</p>
+                <p>
+                  Над созданием одежды трудятся молодые, перспективные и
+                  креативные сотрудники.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Конец раздела о нас  -->
+    </main>
+    <footer>
+      <div class="footer-block">
+        <div class="left-footer-block">
+          <p>WearStore ©</p>
+          <p><span>Все авторские права защищены</span></p>
+          <a href="documentation.html"><span>Лицензия №0067-28-44-160</span></a>
+          <p><span>2025 г.</span></p>
+        </div>
+        <div class="right-footer-block">
+          <a href=""><p>telegram</p></a>
+          <a href=""><p>instagram</p></a>
+          <a href=""><p>vk</p></a>
+          <a href=""><p>+7 (999) 888-77-66</p></a>
+          <a href=""><p>dmitrijkomkin70@gmail.com</p></a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/burger-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,709 @@
+/* Заголовок для блоков */
+.head-typing {
+  font-family: "Science-Gothic";
+  font-size: clamp(40px, 5vw, 60px); /* Адаптивный размер */
+  padding: 10vh 0;
+}
+/* Начало хиро блока */
+.hero-main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-split {
+  display: flex;
+  height: 100vh;
+}
+
+/* Левая часть - темно-серый фон */
+.hero-left {
+  flex: 0 0 50%;
+  background: #1a1a1a; /* Темно-серый */
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero-subtitle {
+  font-family: "Science-Gothic", sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.head-type {
+  font-family: "Science-Gothic", sans-serif;
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.hero-description {
+  font-family: "Science-Gothic";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  padding: 14px 36px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  font-family: "Science-Gothic", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background: white;
+  color: #1a1a1a;
+}
+
+/* Правая часть - картинка как фон */
+.hero-right {
+  flex: 0 0 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.9;
+}
+
+/* Карточки */
+.cards-main {
+  background-color: rgba(216, 216, 216, 1);
+}
+.cards-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 5% 5% 5%;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: fit-content;
+}
+
+.card {
+  width: 22vw; /* Фиксированная ширина или 20vw как у вас */
+  height: 400px;
+  background-color: white;
+  border: none; /* Острые углы */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Контейнер для изображения */
+.card-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Фоновая картинка */
+.card-bg-first {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 30%),
+    url("../images/first-img-card.jpg") center/cover no-repeat;
+}
+.card-bg-second {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 30%),
+    url("../images/second-img-card.jpg") center/cover no-repeat;
+}
+.card-bg-third {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 30%),
+    url("../images/third-img-card.jpg") center/cover no-repeat;
+}
+.card-bg-fourth {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 30%),
+    url("../images/fourth-img-card.jpg") center/cover no-repeat;
+}
+
+/* Текст названия коллекции */
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  transition: opacity 0.3s ease;
+}
+
+.collection-name {
+  font-family: "Science-Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Затемнение и кнопка при наведении */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+/* Исчезновение текста при наведении */
+.card:hover .card-text {
+  opacity: 0;
+}
+
+/* Кнопка */
+.card-button {
+  padding: 14px 32px;
+  background: white;
+  color: black;
+  border: none;
+  font-family: "Science-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease 0.1s;
+}
+
+.card:hover .card-button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-button:hover {
+  background: #f5f5f5;
+}
+
+/* Галерея */
+
+.gallery {
+  background-color: rgba(216, 216, 216, 1);
+}
+
+.gallery-blocks {
+  display: flex;
+  gap: 10%;
+  padding: 0 5%;
+}
+
+.gallery-images-block {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "i1 i1 i2"
+    "i3 i3 i3"
+    "i4 i5 i5";
+  grid-template-rows: auto auto auto; /* Автоматическая высота */
+}
+
+/* Убираем фиксированную высоту, добавляем контейнеры */
+.gallery-image-container {
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f5; /* Фон пока нет изображения */
+}
+
+.image-1 {
+  grid-area: i1;
+}
+.image-2 {
+  grid-area: i2;
+}
+.image-3 {
+  grid-area: i3;
+}
+.image-4 {
+  grid-area: i4;
+}
+.image-5 {
+  grid-area: i5;
+}
+
+/* Стили для самих изображений */
+.gallery-images-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Сохраняет пропорции, заполняет контейнер */
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении */
+.gallery-image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Задаем пропорции для разных блоков */
+.image-1,
+.image-2 {
+  height: auto;
+}
+
+.image-3 {
+  height: auto;
+}
+
+.gallery-text-block {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: "Science-Gothic";
+}
+
+/* Галерея конец */
+
+/* Новостой блок */
+.news {
+  background-color: rgba(216, 216, 216, 1);
+}
+.news-cards-block {
+  width: 100%;
+  padding: 0 5% 5% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 5px;
+}
+.news-card {
+  width: 380px;
+  height: 300px;
+  background-color: rgba(187, 187, 187, 1);
+}
+.news-card-image {
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 30%),
+    url("../images/news-image-block-2.jpg") center/cover no-repeat;
+}
+.news-card-text {
+  position: relative;
+  padding: 3%;
+}
+.news-card-general {
+  font-family: "Science-Gothic";
+  letter-spacing: -0.1em;
+  font-size: 18px;
+  text-align: center;
+}
+.news-card-date {
+  position: absolute;
+  right: 0%;
+  top: -30%;
+  background-color: rgba(15, 15, 15, 0.6);
+  border: 1px solid #111;
+  /* border-radius: 5px; */
+  padding: 1%;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Science-Gothic-Normal";
+  font-size: 12px;
+  font-style: italic;
+}
+.news-card-description {
+  padding: 10px 5%;
+  text-align: center;
+  font-family: "Science-Gothic-Normal";
+  letter-spacing: -0.1em;
+  line-height: 105%;
+}
+.about {
+  background-color: rgba(216, 216, 216, 1);
+}
+.about-section {
+  position: relative;
+  padding: 0 5% 80px 5%;
+}
+
+.about-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Общие стили для всех карточек */
+.first-about-block,
+.second-about-block,
+.third-about-block,
+.fourth-about-block {
+  border: 2px solid transparent;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+  background: white;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Эффект при наведении */
+.first-about-block:hover,
+.second-about-block:hover,
+.third-about-block:hover,
+.fourth-about-block:hover {
+  transform: translateY(-5px);
+  border: 2px solid black;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.first-about-block span,
+.second-about-block span,
+.third-about-block span,
+.fourth-about-block span {
+  position: absolute;
+  background-color: #1a1a1a;
+  width: 25px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  font-family: "Science-Gothic-Normal";
+  top: 0;
+  left: 0;
+}
+/* Иконки */
+.icon-about-block {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Текст */
+.text-about-block {
+  flex: 1;
+}
+
+.head-text-about {
+  font-family: "Science-Gothic";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.text-about-block p:last-child {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  font-family: "Science-Gothic-Normal";
+}
+
+/* Кривые соединительные линии */
+.about-connectors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.connector-top {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 100px;
+}
+
+.connector-bottom {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  width: 80%;
+  height: 100px;
+}
+
+.footer-block {
+  width: 100%; /* Важно! */
+  font-family: "Science-Gothic";
+  display: flex;
+  background-color: rgb(236, 236, 236);
+  justify-content: space-between;
+  padding-top: 2%;
+  line-height: 2em;
+  font-size: clamp(10px, 5vw, 20px);
+}
+.footer-block span {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: clamp(8px, 3vw, 14px);
+  font-family: "Science-Gothic-Normal";
+}
+.left-footer-block {
+  margin-left: 5%;
+}
+.right-footer-block {
+  margin-right: 5%;
+  font-size: clamp(8px, 3vw, 14px);
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .about-block {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .connector-top,
+  .connector-bottom {
+    display: none; /* Скрываем линии на мобильных */
+  }
+}
+@media (max-width: 1024px) {
+  .cards-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 30vw;
+  }
+  .news-cards-block {
+    width: 100%;
+    padding: 5%;
+  }
+  .news-card {
+    width: 40vw;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 40vw;
+    min-width: 250px;
+  }
+  .news-cards-block {
+    width: 100%;
+  }
+  .news-card {
+    width: 40vw;
+    height: 50vh;
+  }
+  .news-card-general {
+    font-size: 16px;
+  }
+  .news-card-date {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90vw;
+    min-width: unset;
+  }
+  .hero-split {
+    display: block;
+  }
+
+  /* Левая часть - темно-серый фон */
+  .hero-left {
+    flex: 0 0 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* Затемнение */ url(../images/main-background.jpg) center/cover no-repeat;
+  }
+  .hero-right {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .hero-main {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    margin-top: 40px;
+    padding: 14px 36px;
+    font-size: 10px;
+  }
+  .head-typing {
+    padding: 10%;
+  }
+  .cards-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 42vw; /* Фиксированная ширина или 20vw как у вас */
+    height: 300px;
+    background-color: white;
+    border: none; /* Острые углы */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  .card-text {
+    padding: 10px;
+  }
+
+  .collection-name {
+    font-size: 18px;
+  }
+  .card-button {
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+  .gallery-text-block {
+    font-size: 14px;
+  }
+  .news-cards-block {
+    width: 100%;
+    padding: 0 5% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+  }
+  .news-card {
+    height: 280px;
+  }
+  .news-card-image {
+    width: 100%;
+    height: 50%;
+  }
+  .news-card-text {
+    position: relative;
+    padding: 3%;
+  }
+  .news-card-general {
+    font-family: "Science-Gothic";
+    letter-spacing: -0.1em;
+    font-size: 16px;
+    text-align: center;
+  }
+  .news-card-description {
+    font-size: 14px;
+  }
+  .gallery-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding: 0 5%;
+  }
+  .gallery-text-block {
+    padding-top: 10%;
+  }
+  .gallery-images-block {
+    height: 80vh;
+  }
+  @media (max-width: 480px) {
+    /* Контейнер */
+    .footer-block {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+    }
+    .left-footer-block {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+    .right-footer-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .right-footer-block a {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+/* Адаптивность для главного экрана */
+@media (max-width: 1024px) {
+  .hero-split {
+    flex-direction: row;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-left {
+    flex: 0 0 50%;
+    padding: 60px 5%;
+  }
+
+  .hero-right {
+    flex: 0 0 50%;
+  }
+}

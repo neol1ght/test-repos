@@ -4,83 +4,528 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/general.css" />
     <title>Test</title>
   </head>
   <body>
-    <header class="header">
-      <p>WearStore</p>
+    <header>
+      <p class="header-text">WearStore</p>
       <nav>
-        <ul class="navbar">
-          <li>Главная</li>
-          <li>Коллекции</li>
-          <li>О нас</li>
-          <li>Контакты</li>
+        <ul>
+          <a href="index.html"><li>Главная</li></a>
+          <a href="#"><li>Купить</li></a>
+          <a href="#"><li>О нас</li></a>
+          <a href="#"><li>Контакты</li></a>
         </ul>
       </nav>
-
-      <p>Корзина</p>
+      <a href="" class="header-text"> Корзина </a>
+      <!-- Здесь добавить иконку для корзины -->
     </header>
     <main>
-      <p class="zagolovok-main">Ex with Christmas</p>
-      <div class="sex-selection">
-        <a href="#"><p>Мужчины</p></a>
-        <a href="#"><p>Женщины</p></a>
-      </div>
-      <div class="gallery">
+      <section>
+        <p class="zagolovok-main">Ex with Christmas</p>
+        <div class="sex-selection">
+          <a href="#"><p>Мужчины</p></a>
+          <a href="#"><p>Женщины</p></a>
+        </div>
         <div class="gallery-blocks">
-          <div class="block1">
-            <img src="images/test-image.jpg" alt="" />
+          <div class="gallery-images-block">
+            <!-- Карточка 1 -->
+            <div class="gallery-image-container image-1">
+              <img
+                src="images/test-main-card.jpg"
+                alt="Urban Minimal"
+                loading="lazy"
+              />
+              <div class="image-content">
+                <h3 class="image-title">URBAN MINIMAL</h3>
+                <p class="image-description">
+                  Базовая коллекция городского стиля
+                </p>
+                <button class="image-button">Подробнее</button>
+              </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="gallery-image-container image-2">
+              <img
+                src="images/test-main-second-card.jpg"
+                alt="Tech Wear"
+                loading="lazy"
+              />
+              <div class="image-content">
+                <h3 class="image-title">TECH WEAR</h3>
+                <p class="image-description">Инновационные ткани и крои</p>
+                <button class="image-button">Подробнее</button>
+              </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="gallery-image-container image-3">
+              <img
+                src="images/test-main-second-card.jpg  "
+                alt="SS'24"
+                loading="lazy"
+              />
+              <div class="image-content">
+                <h3 class="image-title">SS'24</h3>
+                <p class="image-description">Летние коллекции нового сезона</p>
+                <button class="image-button">Подробнее</button>
+              </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="gallery-image-container image-4">
+              <img
+                src="images/test-main-card.jpg"
+                alt="Accessories"
+                loading="lazy"
+              />
+              <div class="image-content">
+                <h3 class="image-title">ACCESSORIES</h3>
+                <p class="image-description">Финальные штрихи к образу</p>
+                <button class="image-button">Подробнее</button>
+              </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="gallery-image-container image-5">
+              <img
+                src="images/test-main-second-card.jpg"
+                alt="Menswear"
+                loading="lazy"
+              />
+              <div class="image-content">
+                <h3 class="image-title">MENSWEAR</h3>
+                <p class="image-description">Чистые линии и функциональность</p>
+                <button class="image-button">Подробнее</button>
+              </div>
+            </div>
           </div>
-          <div class="block2">
-            <img src="images/test-image.jpg" alt="" />
-          </div>
-          <div class="block3">Origin</div>
-          <div class="block4">Mind</div>
-          <div class="block5">Peace</div>
         </div>
-      </div>
-      <div class="unique-collections">
-        <p class="zagolovok-main">Уникальное</p>
-        <div class="cards-block">
-          <div class="card">
-            <div class="zagolovok-card">худи</div>
-            <div class="prices">
-              <p class="price-window">Старая цена!</p>
-              <p class="price-card">5990 Р</p>
-              <p class="new-price-card">2990 Р</p>
-              <a href="#" class="buy-card">Купить</a>
+      </section>
+      <section>
+        <div class="unique-collections">
+          <p class="zagolovok-main">Уникальное</p>
+          <div class="cards-block">
+            <div class="card">
+              <div class="zagolovok-card">
+                худи
+                <div class="title-tovar-card">Chill Home</div>
+              </div>
+              <div class="prices">
+                <p class="price-window">Старая цена!</p>
+                <p class="price-card">8990 Р</p>
+                <p class="new-price-card">5990 Р</p>
+                <a href="#" class="buy-card">Купить</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="zagolovok-card">боди</div>
-            <div class="prices">
-              <p class="price-window">Старая цена!</p>
-              <p class="price-card">5990 Р</p>
-              <p class="new-price-card">2990 Р</p>
-              <a href="#" class="buy-card">Купить</a>
+            <div class="card">
+              <div class="zagolovok-card">
+                боди
+                <div class="title-tovar-card">Fitty Primus</div>
+              </div>
+              <div class="prices">
+                <p class="price-window">Старая цена!</p>
+                <p class="price-card">6990 Р</p>
+                <p class="new-price-card">4590 Р</p>
+                <a href="#" class="buy-card">Купить</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="zagolovok-card">куртки</div>
-            <div class="prices">
-              <p class="price-window">Старая цена!</p>
-              <p class="price-card">5990 Р</p>
-              <p class="new-price-card">2990 Р</p>
-              <a href="#" class="buy-card">Купить</a>
+            <div class="card">
+              <div class="zagolovok-card">
+                куртка
+                <div class="title-tovar-card">Brock your Heart</div>
+              </div>
+              <div class="prices">
+                <p class="price-window">Старая цена!</p>
+
+                <p class="price-card">34990 Р</p>
+                <p class="new-price-card">25990 Р</p>
+                <a href="#" class="buy-card">Купить</a>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="zagolovok-card">бомберы</div>
-            <div class="prices">
-              <p class="price-window">Старая цена!</p>
-              <p class="price-card">5990 Р</p>
-              <p class="new-price-card">2990 Р</p>
-              <a href="#" class="buy-card">Купить</a>
+            <div class="card">
+              <div class="zagolovok-card">
+                бомбер
+                <div class="title-tovar-card">Lands Dore</div>
+              </div>
+
+              <div class="prices">
+                <p class="price-window">Старая цена!</p>
+                <p class="price-card">29900 Р</p>
+                <p class="new-price-card">21990 Р</p>
+
+                <a href="#" class="buy-card">Купить</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="special-tovar">
+        <p class="zagolovok-main">ChillHome</p>
+        <p class="lower-zagolovok">худи</p>
+
+        <div class="tovar-block">
+          <div class="carousel-tovar">
+            <!-- <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">  -->
+            <!-- К примеру накидал тэгов-изображений, потом здесь фигачу карусель -->
+          </div>
+          <div class="text-tovar">
+            <p class="about-tovar">
+              Без излишек, изящества и пафоса. Просто комфортное худи. В нем вы
+              будете чувствовать себя как дома. Комфорт и стиль - все сочетается
+              здесь
+            </p>
+            <div class="size-tovar">
+              <p>Размеры:</p>
+              <div class="sizes-block">
+                <label class="size-option">
+                  <input type="radio" name="size" value="xs" hidden />
+                  <span class="size-label">XS</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="s" hidden />
+                  <span class="size-label">S</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="m" hidden checked />
+                  <span class="size-label">M</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="l" hidden />
+                  <span class="size-label">L</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="xl" hidden />
+                  <span class="size-label">XL</span>
+                </label>
+              </div>
+            </div>
+            <div class="rating-tovar">
+              <!-- Иконка звезды -->
+              <svg style="display: none">
+                <defs>
+                  <symbol id="star-icon" viewBox="0 0 20 20">
+                    <!-- Измените fill="currentColor" чтобы цвет менялся через CSS -->
+                    <path
+                      d="M10 0L12 7H19L13 11L15 18L10 14L5 18L7 11L1 7H8L10 0Z"
+                      fill="currentColor"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+              <!-- 
+              Основной класс -->
+              <div class="rating">
+                <p class="rating-zagolovok">Отзывы:</p>
+
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+
+                <p class="rating-average">4.99</p>
+                <button type="button" class="bring-rating">
+                  Оставить отзыв
+                </button>
+              </div>
+            </div>
+            <button type="button" class="buy-tovar">Купить</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="special-tovar">
+        <p class="zagolovok-main">FittyPrimus</p>
+        <p class="lower-zagolovok">боди</p>
+
+        <div class="tovar-block">
+          <div class="carousel-tovar">
+            <!-- <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">  -->
+            <!-- К примеру накидал тэгов-изображений, потом здесь фигачу карусель -->
+          </div>
+          <div class="text-tovar">
+            <p class="about-tovar">
+              Облегающая, безчувствительная, но стильная. Необычная, но
+              приятная. Мягкая ткань, которая спокойно тянется и не линяет.
+              Отлично подчеркивает вашу фигуру
+            </p>
+            <div class="size-tovar">
+              <p>Размеры:</p>
+              <div class="sizes-block">
+                <label class="size-option">
+                  <input type="radio" name="size" value="xs" hidden />
+                  <span class="size-label">XS</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="s" hidden />
+                  <span class="size-label">S</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="m" hidden checked />
+                  <span class="size-label">M</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="l" hidden />
+                  <span class="size-label">L</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="xl" hidden />
+                  <span class="size-label">XL</span>
+                </label>
+              </div>
+            </div>
+            <div class="rating-tovar">
+              <!-- Иконка звезды -->
+              <svg style="display: none">
+                <defs>
+                  <symbol id="star-icon" viewBox="0 0 20 20">
+                    <!-- Измените fill="currentColor" чтобы цвет менялся через CSS -->
+                    <path
+                      d="M10 0L12 7H19L13 11L15 18L10 14L5 18L7 11L1 7H8L10 0Z"
+                      fill="currentColor"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+              <!-- 
+              Основной класс -->
+              <div class="rating">
+                <p class="rating-zagolovok">Отзывы:</p>
+
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+
+                <p class="rating-average">4.91</p>
+                <button type="button" class="bring-rating">
+                  Оставить отзыв
+                </button>
+              </div>
+            </div>
+            <button type="button" class="buy-tovar">Купить</button>
+          </div>
+        </div>
+      </section>
+      <section class="special-tovar">
+        <p class="zagolovok-main">BrockYourHeart</p>
+        <p class="lower-zagolovok">куртка</p>
+
+        <div class="tovar-block">
+          <div class="carousel-tovar">
+            <!-- <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">  -->
+            <!-- К примеру накидал тэгов-изображений, потом здесь фигачу карусель -->
+          </div>
+          <div class="text-tovar">
+            <p class="about-tovar">
+              Броская, дерзкая... и очень теплая. Отлично подходит для зимы и
+              супер холодной зимы. Три подкладки из шерсти и полиэстера никогда
+              не дадут вам замерзнуть, также куртка подходит и для осени, стоит
+              только сделать несколько движений
+            </p>
+            <div class="size-tovar">
+              <p>Размеры:</p>
+              <div class="sizes-block">
+                <label class="size-option">
+                  <input type="radio" name="size" value="xs" hidden />
+                  <span class="size-label">XS</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="s" hidden />
+                  <span class="size-label">S</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="m" hidden checked />
+                  <span class="size-label">M</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="l" hidden />
+                  <span class="size-label">L</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="xl" hidden />
+                  <span class="size-label">XL</span>
+                </label>
+              </div>
+            </div>
+            <div class="rating-tovar">
+              <!-- Иконка звезды -->
+              <svg style="display: none">
+                <defs>
+                  <symbol id="star-icon" viewBox="0 0 20 20">
+                    <!-- Измените fill="currentColor" чтобы цвет менялся через CSS -->
+                    <path
+                      d="M10 0L12 7H19L13 11L15 18L10 14L5 18L7 11L1 7H8L10 0Z"
+                      fill="currentColor"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+              <!-- 
+              Основной класс -->
+              <div class="rating">
+                <p class="rating-zagolovok">Отзывы:</p>
+
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+
+                <p class="rating-average">4.87</p>
+                <button type="button" class="bring-rating">
+                  Оставить отзыв
+                </button>
+              </div>
+            </div>
+            <button type="button" class="buy-tovar">Купить</button>
+          </div>
+        </div>
+      </section>
+      <section class="special-tovar">
+        <p class="zagolovok-main">Lands Dore</p>
+        <p class="lower-zagolovok">бомбер</p>
+
+        <div class="tovar-block">
+          <div class="carousel-tovar">
+            <!-- <img src="#" alt="">
+            <img src="#" alt="">
+            <img src="#" alt="">  -->
+            <!-- К примеру накидал тэгов-изображений, потом здесь фигачу карусель -->
+          </div>
+          <div class="text-tovar">
+            <p class="about-tovar">
+              Винтаж, сочетающий в себе постмодернизм искусства и яркость
+              абстрактных элементов. Бомбер сделан из нескольких кроющих
+              материалов. Инновации уже здесь
+            </p>
+            <div class="size-tovar">
+              <p>Размеры:</p>
+              <div class="sizes-block">
+                <label class="size-option">
+                  <input type="radio" name="size" value="xs" hidden />
+                  <span class="size-label">XS</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="s" hidden />
+                  <span class="size-label">S</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="m" hidden checked />
+                  <span class="size-label">M</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="l" hidden />
+                  <span class="size-label">L</span>
+                </label>
+
+                <label class="size-option">
+                  <input type="radio" name="size" value="xl" hidden />
+                  <span class="size-label">XL</span>
+                </label>
+              </div>
+            </div>
+            <div class="rating-tovar">
+              <!-- Иконка звезды -->
+              <svg style="display: none">
+                <defs>
+                  <symbol id="star-icon" viewBox="0 0 20 20">
+                    <!-- Измените fill="currentColor" чтобы цвет менялся через CSS -->
+                    <path
+                      d="M10 0L12 7H19L13 11L15 18L10 14L5 18L7 11L1 7H8L10 0Z"
+                      fill="currentColor"
+                    />
+                  </symbol>
+                </defs>
+              </svg>
+              <!-- 
+              Основной класс -->
+              <div class="rating">
+                <p class="rating-zagolovok">Отзывы:</p>
+
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+                <svg class="star filled">
+                  <use xlink:href="#star-icon"></use>
+                </svg>
+
+                <p class="rating-average">4.99</p>
+                <button type="button" class="bring-rating">
+                  Оставить отзыв
+                </button>
+              </div>
+            </div>
+            <button type="button" class="buy-tovar">Купить</button>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <div class="footer-block">
         <div class="left-footer-block">
@@ -97,5 +542,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/burger-menu.js"></script>
   </body>
 </html>
